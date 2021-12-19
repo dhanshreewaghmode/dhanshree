@@ -21,12 +21,7 @@ public class Test_case1 {
 		
 		Pom_method login = new Pom_method(driver);
 		
-		//login. UserID("dhanshreewaghmode@gmail.com");
-		//login.EnterPass("31924082848");
-		//login.clickLogin();
-		Excel_third util=new Excel_third();
-		login.UserID(util.excelRead(0,0));
-		login.EnterPass(util.excelRead(0,1));
+		
 		login.clickLogin();
 		
 		Excel_third img = new Excel_third();
